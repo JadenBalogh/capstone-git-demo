@@ -2,6 +2,7 @@ public class GitDemo
 {
   public static void main(String[] args)
   {
+    // Debug the methods created
     int[] myArr = { 1, 2, 3, 4 };
     System.out.println("The sum of " + getDebugString(myArr) + " is " + getSum(myArr));
     System.out.println("The mean of " + getDebugString(myArr) + " is " + getMean(myArr));

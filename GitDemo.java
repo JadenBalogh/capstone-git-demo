@@ -4,6 +4,7 @@ public class GitDemo
   {
     int[] myArr = { 1, 2, 3, 4 };
     System.out.println("The sum of " + getDebugString(myArr) + " is " + getSum(myArr));
+    System.out.println("The mean of " + getDebugString(myArr) + " is " + getMean(myArr));
   }
 
   public static int getSum(int[] arr)
@@ -14,6 +15,11 @@ public class GitDemo
       sum += arr[i];
     }
     return sum;
+  }
+
+  public static float getMean(int[] arr)
+  {
+    return (float) getSum(arr) / arr.length;
   }
 
   public static String getDebugString(int[] arr)
